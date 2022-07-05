@@ -312,7 +312,7 @@ li a {
 
 .actions {
     text-align: center;
-    padding: 98px 0 91px;
+    padding: 98px 0 88px;
 }
 
 .actions span {
@@ -380,7 +380,11 @@ li a {
 .customers-inner {
     display: flex;
     align-items: center;
-    padding: 40px 48px;
+    padding: 113px 48px 90px 48px;
+}
+
+.customer__info {
+    margin-left: 65px;
 }
 
 .customer__info span {
@@ -388,39 +392,46 @@ li a {
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    display: block;
+    line-height: 13px;
 }
 
 .customer__info h3 {
     font-size: 32px;
     line-height: 38px;
-    margin: 0 0 14px 0;
+    margin: 0 0 16px 0;
     color: white;
 }
 
 .customer__info p {
     font-size: 15px;
     color: #ECE7E4;
-    width: 45%;
+    width: 68%;
     margin: 0;
 }
 
 .customers__logos {
     display: flex;
     align-items: center;
+    margin-right: 64px;
 }
 
 .customers__logos_left img:first-child {
     margin-bottom: 128px;
-    margin-right: 183px;
 }
 
 .customers__logos_right img:first-child {
     margin-bottom: 80px;
 }
 
-.customers__logos_left img {
-    width: 45%;
+.customers__logos_left {
+    margin-right: 134px;
 }
+
+.customers__logos_right {
+    margin-left: 50px;
+}
+
 
 @media screen and (max-width: 990px) {
     .customers-inner {
@@ -450,10 +461,6 @@ li a {
 @media screen and (max-width: 490px) {
     .customers {
         margin-top: 100px;
-    }
-
-    .customers__logos_left img {
-        width: 60%;
     }
 }
 
@@ -487,8 +494,8 @@ li a {
 
 .wall__context {
     position: absolute;
-    top: 23%;
-    left: 14%;
+    top: 44.5%;
+    left: 12.5%;
 }
 
 .wall__context h4 {
@@ -543,24 +550,29 @@ li a {
 }
 
 .projects_inner {
-    padding: 120px 0 100px 0;
+    padding: 120px 0 99px 0;
 }
 
 .projects_inner h2 {
     font-size: 39px;
     line-height: 42px;
-    margin: 0 0 15px 0;
+    margin: -5px 0 10px 15px;
 }
 
 .projects_inner p {
     font-size: 24px;
-    margin: 0 0 42px 0;
+    margin: 0 0 39px 15px;
     width: 50%;
+    line-height: 34px;
+}
+
+.projects__images {
+    margin-left: 18px;
 }
 
 
 .projects__images img {
-    margin-right: 16px;
+    margin-right: 20px;
 }
 
 .projects__button_div {
@@ -571,7 +583,7 @@ li a {
 .projects__button {
     border: 1px solid #000000;
     border-radius: 14px;
-    padding: 11px 20px;
+    padding: 11px 52px 11px 39px;
     margin-top: 40px;
 }
 
@@ -588,8 +600,8 @@ li a {
 
 .projects__image_text {
     position: absolute;
-    top: 32%;
-    left: 39%;
+    top: 34.5%;
+    left: 40%;
 }
 
 .projects__image_text span {
@@ -597,6 +609,7 @@ li a {
     font-size: 14px;
     text-transform: uppercase;
     margin: 0;
+    display: block;
 }
 
 .projects__image_text h4 {
@@ -607,14 +620,14 @@ li a {
 
 .projects__image_button {
     position: absolute;
-    top: 69%;
-    left: 41%;
+    top: 70.5%;
+    left: 40%;
     background: #000000;
     border-radius: 14px;
     outline: none;
     border: none;
     color: white;
-    padding: 11px 20px;
+    padding: 11px 24px;
 }
 
 .projects__image_button:hover {
@@ -697,28 +710,29 @@ li a {
 
 .team {
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .team__text {
-    width: 50%;
+    width: 34%;
 }
 
 .team__text h3 {
     font-size: 32px;
-    margin: 96px 0 14px 0;
+    margin: 93px 0 14px 14px;
 }
 
 .team__text p {
     font-size: 15px;
-    margin: 0 0 30px 0;
-    width: 51%;
+    margin: -5px 0 32px 18px;
+    width: 86%;
 }
 
 .team__text button {
     border: 1px solid #000000;
     border-radius: 14px;
-    padding: 11px 20px;
+    padding: 11px 39px;
+    margin-left: 17px;
     background-color: transparent;
 }
 
@@ -734,13 +748,13 @@ li a {
 }
 
 .team__pictures_left {
-    margin-right: 115px;
+    margin-right: 154px;
 }
 
 .team__pictures_parts {
     display: flex;
     align-items: center;
-    margin-bottom: 44px;
+    margin-bottom: 50px;
 }
 
 .team__pictures_part {
@@ -749,6 +763,7 @@ li a {
 
 .team__pictures_part h5 {
     font-size: 17px;
+    line-height: 17px;
     margin: 0;
 }
 
@@ -811,7 +826,7 @@ li a {
 }
 
 .touch_inner {
-    padding: 100px 0;
+    padding: 85px 0 85px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
