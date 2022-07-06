@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,30 +15,31 @@
 <body>
     <header class="container">
         <img src="./images/Logo.svg" alt="the logo">
-        <nav>
+        <button type="button" class="nav-btn" id="navBtn"><span></span></button>
+        <nav class="nav main-nav nav-hidden" id="mainNav">
             <ul>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">News</a>
+                    <a href="#news">News</a>
                 </li>
                 <li>
-                    <a href="#">Team</a>
+                    <a href="#team">Team</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contacts">Contact</a>
                 </li>
-                <button class="nav__button">Get template</button>
             </ul>
+            <button class="nav__button">Get template</button>
         </nav>
     </header>
     <main>
         <section class="introduction">
-            <article class="introduction__left">
+            <div class="introduction__left">
                 <span class="introduction__left_logo">WISHBONE + PARTNERS</span>
                 <h1 class="introduction__left_title">The home of beautiful architecture.</h1>
                 <p class="introduction__left_text">We are an architecture firm with a focus on beautiful but
@@ -47,13 +48,15 @@
                     design is about usability and accessibility — these are the guiding principles for our work.
                     Read
                     more about our previous projects, our process and our team below.</p>
-                <button class="introduction__left_button">Read more</button>
-            </article>
-            <article class="introduction__right">
-                <img width="100%" src="./images/Architecture.png" alt="the house">
-            </article>
+                <div class="introduction__button">
+                    <button class="main__button">Read more</button>
+                </div>
+            </div>
+            <div class="introduction__right">
+                <img src="./images/Architecture.jpg" alt="the house">
+            </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__left">
                 <h3 class="about__left_title">Our firm</h3>
             </div>
@@ -74,7 +77,7 @@
                     <div class="about__right_avatar_pic">
                         <img src="./images/avatar.png" alt="the face">
                     </div>
-                    <div class="about__right_avatar_names">
+                    <div class="avatar__names">
                         <p>Stephen Collier</p>
                         <span>
                             Senior Partner
@@ -85,7 +88,7 @@
         </section>
         <section class="reeding">
             <div class="reeding__image">
-                <img width="100%" src="./images//home.png" alt="big home">
+                <img src="./images//home.png" alt="big home">
             </div>
             <div class="reeding__context">
                 <h4>Reeding house</h4>
@@ -97,7 +100,7 @@
             <h2>How we do what we do.</h2>
             <div class="actions__parts">
                 <div class="actions__part">
-                    <img src="./images/sketching.png" alt="sketching">
+                    <img src="./images/sketching.svg" alt="sketching">
                     <h6>
                         Sketching
                     </h6>
@@ -105,7 +108,7 @@
                         sapien ac arcu tempor, vitae tempor leo iaculis.</p>
                 </div>
                 <div class="actions__part">
-                    <img src="./images/finalizing.png" alt="finalizing">
+                    <img src="./images/finalizing.svg" alt="finalizing">
                     <h6>
                         Finalizing
                     </h6>
@@ -113,7 +116,7 @@
                         tempor, vitae.</p>
                 </div>
                 <div class="actions__part">
-                    <img src="./images/building.png" alt="building">
+                    <img src="./images/building.svg" alt="building">
                     <h6>
                         Building
                     </h6>
@@ -125,7 +128,7 @@
         </section>
         <section class="staircase">
             <div class="reeding__image">
-                <img width="100%" src="./images/stairs.png" alt="stairs">
+                <img src="./images/stairs.jpg" alt="stairs">
             </div>
             <div class="reeding__context">
                 <h4 class="">The marble staircase</h4>
@@ -133,7 +136,7 @@
             </div>
         </section>
         <section class="customers">
-            <div class="container customers-inner">
+            <div class="container customers__inner">
                 <div class="customer__info">
                     <span>Prior clients</span>
                     <h3>Happy customers</h3>
@@ -143,119 +146,138 @@
                 </div>
                 <div class="customers__logos">
                     <div class="customers__logos_left">
-                        <img src="./images/logo-1.png" alt="1st  logo">
-                        <img src="./images/logo-3.png" alt="logo 2">
+                        <img src="./images/logo-1.svg" alt="1st  logo">
+                        <img src="./images/logo-3.svg" alt="logo 2">
                     </div>
                     <div class="customers__logos_right">
-                        <img src="./images/logo-2.png" alt="logo 3">
-                        <img src="./images//logo-4.png" alt="logo 4">
+                        <img src="./images/logo-2.svg" alt="logo 3">
+                        <img src="./images/logo-4.svg" alt="logo 4">
                     </div>
                 </div>
             </div>
         </section>
         <section class="wall">
             <div class="wall__picture">
-                <img width="100%" src="./images/wall.png" alt="the wall">
+                <img src="./images/wall.jpg" alt="the wall">
             </div>
             <div class="wall__context">
                 <h4>The swirling staircase</h4>
                 <p>Lorem ipsum dolor sit amet, dolor sit amet dolor sit amet.</p>
             </div>
         </section>
-        <section class="projects">
-            <div class="projects_inner container">
+        <section class="projects" id="projects">
+            <div class="projects__inner container">
                 <h2>Featured projects</h2>
                 <p>Some of the latest and greatest projects from us here at Wishbone+Partners.</p>
                 <div class="projects__images">
-                    <img src="./images/project-1.png" alt="project-1">
-                    <img src="./images/project-2.png" alt="project-2">
-                    <img src="./images/project-3.png" alt="project-3">
+                    <div class="projects__image">
+                        <img src="./images/project-1.jpg" alt="project-1">
+                        <div class="projects__image_text">
+                            <span>New York</span>
+                            <h4>Big Road Brewery</h4>
+                        </div>
+                        <button class="projects__image_button">Read more</button>
+                    </div>
+                    <div class="projects__image">
+                        <img src="./images/project-2.jpg" alt="project-1">
+                        <div class="projects__image_text">
+                            <span>New York</span>
+                            <h4>Big Road Brewery</h4>
+                        </div>
+                        <button class="projects__image_button">Read more</button>
+                    </div>
+                    <div class="projects__image">
+                        <img src="./images/project-3.jpg" alt="project-1">
+                        <div class="projects__image_text">
+                            <span>New York</span>
+                            <h4>Big Road Brewery</h4>
+                        </div>
+                        <button class="projects__image_button">Read more</button>
+                    </div>
                 </div>
                 <div class="projects__button_div">
-                    <button class="projects__button">View all</button>
+                    <button class="main__button">View all</button>
                 </div>
             </div>
-            <div class="projects__image_text">
-                <span>New York</span>
-                <h4>Big Road Brewery</h4>
-            </div>
-            <button class="projects__image_button">Read more</button>
         </section>
-        <section class="team container">
+        <section class="team container" id="team">
             <div class="team__text">
                 <h3>Meet our team</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                     tristique. Duis cursus, mi quis.</p>
-                <button>Our team</button>
+                <div class="team__button">
+                    <button class="main__button">Our team</button>
+                </div>
             </div>
             <div class="team__pictures">
                 <div class="team__pictures_left">
                     <div class="team__pictures_parts">
-                        <img src="./images/1st employee.png" alt="1st employee">
-                        <div class="team__pictures_part">
-                            <h5>Stephen Collier</h5>
-                            <p>Senior Partner</p>
+                        <img src="./images/1st-employee.png" alt="1st employee">
+                        <div class="avatar__names">
+                            <p>Stephen Collier</p>
+                            <span>Senior Partner</span>
                         </div>
                     </div>
                     <div class="team__pictures_parts">
-                        <img src="./images/2nd employee.png" alt="2nd employee">
-                        <div class="team__pictures_part">
-                            <h5>Ferris Wonder</h5>
-                            <p>Associate Partner</p>
+                        <img src="./images/2nd-employee.png" alt="2nd employee">
+                        <div class="avatar__names">
+                            <p>Ferris Wonder</p>
+                            <span>Associate Partner</span>
                         </div>
                     </div>
                     <div class="team__pictures_parts">
-                        <img src="./images/3rd employee.png" alt="3rd employee">
-                        <div class="team__pictures_part">
-                            <h5>Niko Ferry</h5>
-                            <p>Partner</p>
+                        <img src="./images/3rd-employee.png" alt="3rd employee">
+                        <div class="avatar__names">
+                            <p>Niko Ferry</p>
+                            <span>Partner</span>
                         </div>
                     </div>
                 </div>
                 <div class="team__pictures_right">
                     <div class="team__pictures_parts">
-                        <img src="./images/4th employee.png" alt="4th employee">
-                        <div class="team__pictures_part">
-                            <h5>Nolan Peters</h5>
-                            <p>Associate</p>
+                        <img src="./images/4th-employee.png" alt="4th employee">
+                        <div class="avatar__names">
+                            <p>Nolan Peters</p>
+                            <span>Associate</span>
                         </div>
                     </div>
                     <div class="team__pictures_parts">
-                        <img src="./images/5th employee.png" alt="5th employee">
-                        <div class="team__pictures_part">
-                            <h5>Aria Stone</h5>
-                            <p>Senior Partner</p>
+                        <img src="./images/5th-employee.png" alt="5th employee">
+                        <div class="avatar__names">
+                            <p>Aria Stone</p>
+                            <span>Senior Partner</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="touch">
+        <section class="touch" id="news">
             <div class="touch_inner container">
                 <div class="touch__left">
                     <span>Get in touch</span>
                     <h2>Think we would be a good fit for your next project?</h2>
                 </div>
                 <div class="touch__right">
-                    <button>Get in touch</button>
+                    <button class="main__button">Get in touch</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="footer_inner container">
             <div class="footer__left">
-                <img src="./images/Logo.svg" alt="logo">
+                <img src="./images/footer_logo.svg" alt="logo">
                 <p>Powered by Webflow</p>
                 <p>All rights reserved Wishbone+Partners, Inc.Licensing</p>
             </div>
             <div class="footer__right">
-                <img src="./images/twitter.png" alt="twitter">
-                <img src="./images/insta.png" alt="insta">
-                <img src="./images/facebook.png" alt="facebook">
+                <img src="./images/twitter.svg" alt="twitter">
+                <img src="./images/insta.svg" alt="insta">
+                <img src="./images/facebook.svg" alt="facebook">
             </div>
         </div>
     </footer>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

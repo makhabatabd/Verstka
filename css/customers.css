@@ -1,0 +1,131 @@
+.customers {
+    background-color: black;
+    color: white;
+}
+
+.customers__inner {
+    display: flex;
+    align-items: center;
+    padding: 116px 48px 90px 48px;
+}
+
+.customer__info {
+    margin-left: 65px;
+}
+
+.customer__info span {
+    color: #ECE7E4;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 13px;
+}
+
+.customer__info h3 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 16px 0;
+    color: white;
+}
+
+.customer__info p {
+    font-size: 15px;
+    color: #ECE7E4;
+    width: 68%;
+    margin: 0;
+}
+
+.customers__logos {
+    display: flex;
+    align-items: center;
+    margin-right: 64px;
+}
+
+.customers__logos_left img:first-child {
+    margin-bottom: 128px;
+}
+
+.customers__logos_right img:first-child {
+    margin-bottom: 88px;
+    margin-top: -11px;
+}
+
+.customers__logos_left {
+    margin-right: 134px;
+}
+
+.customers__logos_right {
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .customers__inner {
+        flex-direction: column;
+    }
+
+    .customers__logos_left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customers__logos_right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer__info p {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .customer__info {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .customers__logos {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    .customers__logos {
+        flex-direction: column;
+    }
+
+    .customers__logos_left {
+        margin-right: 0px;
+    }
+
+    .customers__logos_left img:first-child {
+        margin-bottom: 55px;
+        margin-right: 0px;
+    }
+
+    .customers__logos_left img:last-child {
+        margin-bottom: 45px;
+    }
+
+    .customers__logos_left img {
+        width: 100%;
+    }
+
+    .customers__logos_right img:first-child {
+        margin-bottom: 60px;
+    }
+
+    .customers__logos_right {
+        margin-left: 0px;
+    }
+
+    .customers__inner {
+        padding: 61px 48px 72px 48px;
+    }
+
+    .customers {
+        margin-top: 0px;
+    }
+}

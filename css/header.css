@@ -1,0 +1,182 @@
+header {
+    padding: 20px 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 32px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav-btn {
+    position: relative;
+    width: 42px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.nav-btn span,
+.nav-btn span::after,
+.nav-btn span::before {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background: #0d3351;
+}
+
+.nav-btn span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nav-btn span::after {
+    content: "";
+    left: 0;
+    top: -7px;
+}
+
+.nav-btn span::before {
+    content: "";
+    left: 0;
+    top: 7px;
+}
+
+
+.main-nav {
+    position: static;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 33px;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+
+.nav__button {
+    background: #000000;
+    border-radius: 14px;
+    color: #FFFFFF;
+    padding: 11px 21px 11px 29px;
+    outline: none;
+    border: 1px solid transparent;
+    margin-right: 18px;
+}
+
+.nav__button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        flex-direction: column;
+        padding-top: 20px !important;
+    }
+
+    nav {
+        padding-top: 10px;
+    }
+
+    .nav__button {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 0;
+        background-color: #C9C0BB;
+    }
+
+    .nav__button {
+        margin: 10px 30px 10px 30px;
+    }
+
+    nav ul {
+        padding: 30px 30px 0px 30px;
+    }
+
+
+    nav li {
+        margin-right: 12px;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .main-nav {
+        overflow: hidden;
+        position: absolute;
+        top: 44px;
+        right: 0;
+    }
+
+    .nav-hidden {
+        height: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 15px;
+    }
+
+    li a {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    .nav__button {
+        padding: 8px 15px;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    header img {
+        margin-left: 5px;
+    }
+
+}

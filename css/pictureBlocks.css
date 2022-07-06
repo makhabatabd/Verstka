@@ -1,0 +1,123 @@
+.reeding {
+    position: relative;
+}
+
+.reeding__context {
+    position: absolute;
+    top: 44%;
+    right: 5%;
+}
+
+.reeding__context h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.reeding__context p {
+    font-size: 16px;
+    margin: 0;
+    width: 289px;
+}
+
+.reeding__image img {
+    display: block;
+    width: 100%;
+}
+
+.staircase {
+    position: relative;
+}
+
+.wall {
+    position: relative;
+}
+
+.wall__context {
+    position: absolute;
+    top: 44.5%;
+    left: 12.5%;
+}
+
+.wall__context h4 {
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.wall__picture img {
+    display: block;
+    width: 100%;
+}
+
+.wall__context p {
+    font-size: 16px;
+    margin: 0;
+    width: 289px;
+}
+
+@media screen and (max-width: 1200px) {
+    .reeding__context {
+        background-color: #ffffff40;
+        margin-right: 20px;
+    }
+
+    .wall__context {
+        background-color: #ffffff40;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .wall__context {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .wall__picture {
+        display: none;
+    }
+
+    .wall__context {
+        padding: 50px 0;
+        text-align: center;
+        margin: 0 auto;
+        position: static;
+        background-color: #C9C0BB;
+    }
+
+    .wall__context p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .wall__context {
+        margin-right: 0px;
+    }
+
+    .reeding {
+        margin-top: 45px;
+    }
+
+    .reeding__image {
+        display: none;
+    }
+
+    .reeding__context {
+        text-align: center;
+        padding: 50px 0;
+        position: static;
+        background-color: #CABDB5;
+    }
+
+    .reeding__context p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .reeding__context {
+        margin-right: 0;
+    }
+}
