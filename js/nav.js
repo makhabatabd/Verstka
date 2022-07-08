@@ -4,7 +4,7 @@ function navToggle() {
   navBtn.onclick = function () {
     if (mainNav.classList.contains("nav-hidden")) {
       mainNav.classList.remove("nav-hidden");
-      mainNav.style.height = 315 + "px";
+      mainNav.style.height = 300 + "px";
       mainNav.style.transition = "height 2s";
     } else {
       mainNav.classList.add("nav-hidden");
